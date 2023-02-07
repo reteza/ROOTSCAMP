@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  padding: 0;
 }
 
 *,
@@ -36,7 +37,7 @@ footer, .reteza{
   font-family: 'Oswald', sans-serif;
   color: rgb(255, 255, 255);
   text-align: center;
-  padding: 5% 0%;
+  padding: 1.5% 0%;
   text-decoration: none;
 }
 
@@ -47,15 +48,17 @@ footer, .reteza{
 .logoMini{
   max-width: 35px;
 }
-.logo{
+.logo {
     display: inline-block;
     margin-left: 10px;
     max-width: 100px;
     margin-top: 10px;
 }
+
 li{
   list-style-type: none;
 }
+
 /* Nav menu */
 .nav{
   font-family: 'Oswald', sans-serif;
@@ -64,94 +67,117 @@ li{
   position: fixed;
   background-color:  rgb(11, 24, 30);
   overflow: hidden;
- 
+  float: right;
 }
 
-.menu{
+.menu, .subnav{
   padding: 0%;
  
 }
 
-.menu a{
-    display: block;
-    padding: 15px;
-    color: rgb(255, 255, 255);
-    text-align:center;
-    text-decoration: none;
+.menu a, .subnavbtn{
+  display: block;
+  padding: 15px;
+  color: rgb(255, 255, 255);
+  text-align:center;
+  text-decoration: none;
 }
+
+.subnavbtn{
+  margin:0;
+}
+
 .menu a:hover{
-    background-color:  rgb(11, 24, 30);;
+  background-color:  rgb(11, 24, 30);;
 }
+
 .nav{
-    max-height: 0;
-    transition: max-height .5s ease-out;
- 
+  max-height: 0;
+  transition: max-height .5s ease-out;
+
 }
 
 /* Menu Icon */
 .hamb{
-    cursor: pointer;
-    float: right;
-    padding: 40px 20px;
-    color: rgb(255, 255, 255);
+  cursor: pointer;
+  float: right;
+  padding: 40px 20px;
+  color: rgb(255, 255, 255);
 }
 
 /* Style label tag */
 
 .hamb-line {
-    background: rgb(255, 255, 255);
-    display: block;
-    height: 2px;
-    position: relative;
-    width: 24px;
-    color: rgb(255, 255, 255);
-  
+  background: rgb(255, 255, 255);
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+  color: rgb(255, 255, 255);
+
 }
- /* Style span tag */
+/* Style span tag */
 
 .hamb-line::before,
 .hamb-line::after{
-    background: rgb(255, 255, 255);
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-   
+  background: rgb(255, 255, 255);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+ 
 }
 .hamb-line::before{
-    top: 5px;
-   
+  top: 5px;
+ 
 }
 .hamb-line::after{
-    top: -5px;
+  top: -5px;
 }
 
 .side-menu {
-    display: none;
+  display: none;
 
 }
 
-
+/* Sub nav */
+.subnav-content {
+  background-color: rgb(11, 24, 30);
+  width: 100%;
+  z-index: 1;
+  padding: 0 ;
+  display: none;
+}
+.subnav-content a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 1.5%;
+  margin: 0;
+  text-align: center;
+}
+.subnav:hover .subnav-content {
+  display: block;
+}
 /* Hide checkbox */
 
 /* Toggle menu icon */
 .side-menu:checked ~ nav{
-    max-height: 100%;  
- 
+  max-height: 100%;  
+
 }
 .side-menu:checked ~ .hamb .hamb-line {
-    background: transparent;
+  background: transparent;
 }
 
 .side-menu:checked ~ .hamb .hamb-line::before {
-    transform: rotate(-45deg);
-    top:0;
+  transform: rotate(-45deg);
+  top:0;
 }
 .side-menu:checked ~ .hamb .hamb-line::after {
-    transform: rotate(45deg);
-    top:0;
+  transform: rotate(45deg);
+  top:0;
 }
 
 .logoSoc{
@@ -188,7 +214,27 @@ li{
   background-size: cover;
 }
 .background_plannedEvents{
-  background-image: url(/images/HP_7_Fotoalbum_12.jpg);
+  background-image: url(/images/PLÁNOVANÉ\ AKCE_1_úvodní\ fotka.jpg);
+  padding: 150px 30px;
+  text-align: justify;
+  font-family: 'Oswald', sans-serif;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.background_Kempy{
+  background-image: url(/images/KEMPY_1_úvodní\ fotka.jpg);
+  padding: 150px 30px;
+  text-align: justify;
+  font-family: 'Oswald', sans-serif;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.background_treninky{
+  background-image: url(/images/TRÉNINKY_1_úvodní\ fotka.jpg);
   padding: 150px 30px;
   text-align: justify;
   font-family: 'Oswald', sans-serif;
@@ -205,7 +251,8 @@ h1{
   color: rgb(255, 255, 255);
   padding: 5% 10% 0% 10%;
   text-align: left;
-
+  text-shadow: 2.5px 2.5px  	#181E2E ;
+  text-transform:uppercase;
 }
 
 h2{
@@ -214,7 +261,8 @@ h2{
   font-family: 'Oswald', sans-serif;
   margin: 0;
   color: rgb(255, 255, 255);
-  padding: 0% 10% 5% 10%;
+  padding: 1.5% 10% 1.5% 10%;
+  text-shadow: 2.5px 2.5px 		#181E2E;
 }
 
 h3{
@@ -224,14 +272,18 @@ h3{
   margin: 0;
   color: rgb(255, 255, 255);
   padding: 0% 10%;
+  
 }
 
 p{
   color: rgb(255, 255, 255);
   font-family: 'Oswald', sans-serif;
   padding: 5% 10%;
+  text-align: justify;
 }
-
+.centerText{
+  text-align: center;
+}
 .button__header {
   transition-duration: 0.4s;
   text-decoration: none;
@@ -271,22 +323,21 @@ p{
 
 .homeCamps, .homePhotoGallery,.campsAbout{
   background-color: rgb(11, 24, 30);
-  padding-top: 5%;
+  padding-top: 1.5%;
 }
 
 .button {
   transition-duration: 0.4s;
   text-decoration: none; 
-  padding: 15px 32px;
+  padding: 1.5%;
   text-align: center;
   font-size: 18px;
   color: rgb(249, 184, 096);
   letter-spacing: 1px;
   font-family: 'Oswald', sans-serif;
   border: 2px solid rgb(249, 184, 096);
-  display:flex;
-  justify-content: center;
-  margin: 10% 20%;
+  display:inline-block;
+  margin: 5% ;
   
 }
 
@@ -294,10 +345,23 @@ p{
   background-color:rgb(249, 184, 096) ; 
   color: rgb(0, 0, 0);
 }
-
+.buttonDisabled {
+  cursor: not-allowed;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  padding: 1.5%;
+  text-align: center;
+  font-size: 18px;
+  background-color:rgb(249, 184, 096, 0.6) ; 
+  color: rgb(0, 0, 0);
+  letter-spacing: 1px;
+  font-family: 'Oswald', sans-serif;
+  display: inline-block;
+  margin: 5%;
+}
 .homeGallery{
   background-color: rgb(11, 24, 30);
-  padding-top: 5%;
+  padding-top: 1.5%;
   display: flex;
   flex-direction: column;
 }
@@ -313,7 +377,8 @@ p{
 
 .icons{
   width: 100%;
-  max-width: 1023px;
+  max-width: 300px;
+  border-radius: 50%;
 }
 .profilPhoto{
   width: 100%;
@@ -324,26 +389,30 @@ p{
 }
 .homePhotoGallery{
   background-color: rgb(11, 24, 30);
-  margin-bottom: 5%;
+  margin-top: 0%;
+  padding: 0%;
 }
 
 .photoGallery{
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 200px;
+  max-height: 200px;
   margin: 0;
   padding: 0;
 }
 
 .homepageEvents{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: rgb(11, 24, 30);
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
 }
 
 
 .homepageContacs{
   background-color: rgb(11, 24, 30);
-  padding-bottom: 5%;
+  padding-bottom: 1.5%;
 }
 
 .homepageContacs1{
@@ -358,44 +427,30 @@ text-align: center;
 justify-content: center;
 }
 
-.aboutRC, .events {
+.aboutRC, .events, .FAQ {
   background-color: rgb(11, 24, 30);
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 1.5%;
+  padding-bottom: 0%;
 }
 
-.campsAbout, .PreviousCamps,.FAQ{
+.campsAbout, .PreviousCamps{
   background-color: rgb(11, 24, 30);
-  padding-bottom: 10%;
+  padding-bottom: 0%;
 }
 
 .campsAA{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 5%;
-  padding-bottom: 5%;
-}
-
-.buttonDisabled {
-  cursor: not-allowed;
-  transition-duration: 0.4s;
-  text-decoration: none;
-  padding: 15px 32px;
-  text-align: center;
-  font-size: 18px;
-  background-color:rgb(249, 184, 096, 0.6) ; 
-  color: rgb(0, 0, 0);
-  letter-spacing: 1px;
-  font-family: 'Oswald', sans-serif;
-  display:flex;
-  justify-content: center;
-  margin: 10% 10%;
-  flex-wrap: wrap;
+  padding-bottom: 1.5%;
 }
 
 .container {
   position: relative;
   width: 90%;
   z-index: 0;
-  margin: 5%;
+  margin: 2%;
 }
 
 .image {
@@ -428,9 +483,9 @@ justify-content: center;
 }
 .textNoWrapp{
   padding: 2% 8%;
+  overflow: hidden;
  }
 .textWrapp {
-  white-space: nowrap; 
   color:  rgb(255, 255, 255);
   font-size: 15px;
   position: absolute;
@@ -439,35 +494,39 @@ justify-content: center;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  padding: 10%;
+  padding: 0%;
+  margin: 0%;
   border: 0cm;
+  width: 90%
 }
 /*reviwes*/
 .reviews{
   background-color: rgb(11, 24, 30);
-  height: 98vh;
+  height: 120vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .board{
-  max-width: 1600px;
+  max-width: 2400px;
   background-color: rgb(11, 24, 30);
   text-align: center;
-  padding: 5%;
+  padding: 2.5%;
 }
 .swiper .swiper-button-prev, .swiper-button-next{
   color: rgb(249, 184, 096);
 }
 .text-light{
   color: rgb(249, 184, 096);
-  font-size: 50px;
+  font-size: 60px;
+  padding: 0;
+  text-align: center;
 }
 
 .swiper {
-  width: 900px;
-  height: 300px;
+  height: 180px;
+  text-align: center;
 }
 
 .sectionLeft{
@@ -497,14 +556,14 @@ justify-content: center;
     align-items: center;
     
   }
-    .nav{
-      max-height: none;
-      top: 0;
-      position: relative;
-      float: right;
-      background-color: transparent;
-      width: 100%;
-      justify-content: flex-end;
+  .nav{
+    max-height: none;
+    top: 0;
+    position: relative;
+    float: right;
+    background-color: transparent;
+    width: 100%;
+    justify-content: flex-end;
   }
   .menu li{
       float: left;
@@ -513,13 +572,32 @@ justify-content: center;
       background-color: transparent;
       color: rgb(249, 184, 096);
 
+  }  
+ /* Sub nav */
+  .subnav-content {
+    padding: 20px 0 ;
+    display: none;
+    background-color:  rgb(11, 24, 30);
   }
-
+  .subnav-content a {
+    color: white;
+}
   .hamb{
       display: none;
   }
-    
+  
 
+  .nav {
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+    margin-right: 5%;
+    padding: 0;
+  }
+
+  .navSoc a{
+    padding: 0;
+  }
   .board{
       width: 100%;
   }
@@ -530,11 +608,12 @@ justify-content: center;
   }
   
   .swiper {
-      width: 600px;
+      width: 800px;
     }
 
   .swiper .swiper-button-prev, .swiper-button-next{
-      display: initial;
+    display: initial;
+     
   }
   .photoGallery{
     width: 100%;
@@ -545,8 +624,7 @@ justify-content: center;
   }
 
   .icons{
-    width: 100%;
-    max-width: 1023px;
+    max-width: 400px;
   }
   .icon{    
     padding: 1%;
@@ -569,21 +647,135 @@ justify-content: center;
 
  .events{
   display: flex;
- }
- .textWrapp{
-  padding: 20%;
-  
+  justify-content: center;
  }
 }
 
-/*tablet*/
+
+/*galerie*/
+#index-gallery{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  grid-template-areas:
+  "gallery-p gallery-p gallery-p gallery-p"
+  "gallery-h2 gallery-h2 gallery-h2 gallery-h2"
+  "img1 img2 img3 img4" 
+  "img5 img6 img7 img8"
+  "img9 img10 img11 img12"
+  ;
+}
+
+#index-gallery .gallery-img {
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+
+#index-gallery p {
+  grid-area: gallery-p;
+  
+ }
+ #index-gallery h2 {
+   grid-area: gallery-h2;
+  ;
+  }
+
+#index-gallery .img1 {
+ grid-area: img1;
+ background-image: url(/images/galerieModrin/thumb/KDE\ JSME\ BYLI_Fotoalbum_Chaluba\ Modřín_1.jpg);
+}
+#index-gallery .img2 {
+  grid-area: img2;
+  background-image: url(/images/galerieModrin/thumb/KDE\ JSME\ BYLI_Fotoalbum_Chaluba\ Modřín_2.jpg);
+ }
+ #index-gallery .img3 {
+  grid-area: img3;
+  background-image: url(/images/galerieModrin/thumb/KDE\ JSME\ BYLI_Fotoalbum_Chaluba\ Modřín_3.jpg);
+ }
+ #index-gallery .img4 {
+  grid-area: img4;
+  background-image: url(/images/galerieModrin/thumb/KDE\ JSME\ BYLI_Fotoalbum_Chaluba\ Modřín_4.jpg);
+ }
+ #index-gallery .img5 {
+  grid-area: img5;
+  background-image: url(/images/galerieModrin/thumb/KDE\ JSME\ BYLI_Fotoalbum_Chaluba\ Modřín_5.jpg);
+ }
+ #index-gallery .img6{
+  grid-area: img6;
+  background-image: url(/images/galerieModrin/thumb/KDE\ JSME\ BYLI_Fotoalbum_Chaluba\ Modřín_6.jpg);
+ }
+ #index-gallery .img7 {
+  grid-area: img7;
+  background-image: url(/images/galerieModrin/thumb/KDE\ JSME\ BYLI_Fotoalbum_Chaluba\ Modřín_7.jpg);
+ }
+ #index-gallery .img8 {
+  grid-area: img8;
+  background-image: url(/images/galerieModrin/thumb/KDE\ JSME\ BYLI_Fotoalbum_Chaluba\ Modřín_8.jpg);
+ }
+ #index-gallery .img9 {
+  grid-area: img9;
+  background-image: url(/images/galerieModrin/thumb/KDE\ JSME\ BYLI_Fotoalbum_Chaluba\ Modřín_9.jpg);
+ }
+ #index-gallery .img10 {
+  grid-area: img10;
+  background-image: url(/images/galerieModrin/thumb/KDE\ JSME\ BYLI_Fotoalbum_Chaluba\ Modřín_10.jpg);
+ }
+ #index-gallery .img11 {
+  grid-area: img11;
+  background-image: url(/images/galerieModrin/thumb/KDE\ JSME\ BYLI_Fotoalbum_Chaluba\ Modřín_11.jpg);
+ }
+ #index-gallery .img12 {
+  grid-area: img12;
+  background-image: url(/images/galerieModrin/thumb/KDE\ JSME\ BYLI_Fotoalbum_Chaluba\ Modřín_12.jpg);
+ }
+
+ .gallery-img div{
+  width: 100%;
+  height: 100%;
+  background-color:rgb(11, 24, 30) ;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ 
+.gallery-img div:hover{
+  opacity: 0.8;
+  transition: all ease-in-out ;
+}
+
+.img-window {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(11, 24, 30, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.img-window img{
+  max-height: 80vh;
+  min-width: 80vw;
+}
 
 
 /*deskop*/
 @media (min-width: 1023px) {
 
   a.button, a.button__header, a.buttonDisabled{
-   margin: 5% 15%;
+   padding: 2% ;
+   margin: 1% 10%;
 
   }
   body{
@@ -602,11 +794,6 @@ justify-content: center;
     max-height: 500px;
     margin: 0;
     padding: 0;
-  }
-  .campsAA{
-    flex-basis: 50%;
-    flex-grow: 1;
-    flex-basis: auto;
   }
 
 }
