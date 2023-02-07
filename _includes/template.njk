@@ -23,11 +23,9 @@
 	<link rel="stylesheet" href="/css/style.css">
 
 </head>
-
-
 <header class="header">
     <!-- Logo -->
-    <a href="/home/">
+    <a href="/index.html">
         <img class="logo" src="/images/logo do levého horního rohu.png" alt="ROOTSCAMP">
     </a>
     <!-- Hamburger icon -->
@@ -36,27 +34,32 @@
     <!-- Menu -->
     <nav class="nav">
         <ul class="menu">
-            <li><a href="/home/">Úvod</a></li>
-            <li><a href="/aboutUs/">O nás</a></li>
-            <li><a href="/camps/">Kempy</a></li>
-                <ul class="menu">
-                    <li><a href="/CampsPlannedEvents/">Plánované akce</a></li>
-                    <li><a href="/campsPreviousCamps/">Kde jsme byli</a></li>
-                </ul>
-            <li><a href="/treninky">Treninky</a></li>
+            <li><a href="/index.html">Úvod</a></li>
+            <li><a href="/oNas/">O nás</a></li>
+            <li class="subnav">
+                <p class="subnavbtn">Kempy<i class="fa fa-caret-down"></i></p>
+                <div class="subnav-content">
+                    <a href="/kempy/">O kempech</a>
+                    <a href="/planovaneAkce/">Plánované akce</a>
+                    <a href="/kdeJsmeByli/">Kde jsme byli</a>
+                </div>
+            </li>
+            <li><a href="/treninky/">Tréninky</a></li>
         </ul>
         <div class="navSoc">
-        <a href="https://www.facebook.com/people/ROOTS-CAMP/100082984676452/">
-            <img class="logoMini" src="/images/fb.png" alt="Odkaz na Facebook">
-        </a>
-
-        <a href="https://www.instagram.com/rootscampcz/?igshid=YmMyMTA2M2Y%3D">
-            <img class="logoMini" src="/images/insta (1).png" alt="Odkaz na Instagram">
-        </a>
+            <a href="https://www.facebook.com/people/ROOTS-CAMP/100082984676452/">
+                <img class="logoMini" src="/images/fb.png" alt="Odkaz na Facebook">
+            </a>
+    
+            <a href="https://www.instagram.com/rootscampcz/?igshid=YmMyMTA2M2Y%3D">
+                <img class="logoMini" src="/images/insta (1).png" alt="Odkaz na Instagram">
+            </a>
         </div>
     </nav>
-
+  
 </header>
+
+
 <body>
 <main class = "main">
     {{ content | safe }}
