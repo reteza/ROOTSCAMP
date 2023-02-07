@@ -1,0 +1,228 @@
+<header class="header">
+    <!-- Logo -->
+    <a href="/index.html">
+        <img class="logo" src="/images/logo do levého horního rohu.png" alt="ROOTSCAMP">
+    </a>
+    <!-- Hamburger icon -->
+    <input class="side-menu" type="checkbox" id="side-menu"/>
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+    <!-- Menu -->
+    <nav class="nav">
+        
+        <ul class="menu">
+            <li><a href="/index.html">Úvod</a></li>
+            <li><a href="/oNas/">O nás</a></li>
+            <li><a href="">Kempy</a>
+                <ul class="nav-dropdown">
+                    <li><a href="/kempy/">O kempech</a></li>
+                    <li><a href="/planovaneAkce/">Plánované akce</a></li>
+                    <li><a href="/kdeJsmeByli/">Kde jsme byli</a></li>
+                </ul>
+            </li>
+            <li><a href="/treninky/">Tréninky</a></li>
+        </ul>
+        <div class="navSoc">
+        <a href="https://www.facebook.com/people/ROOTS-CAMP/100082984676452/">
+            <img class="logoMini" src="/images/fb.png" alt="Odkaz na Facebook">
+        </a>
+
+        <a href="https://www.instagram.com/rootscampcz/?igshid=YmMyMTA2M2Y%3D">
+            <img class="logoMini" src="/images/insta (1).png" alt="Odkaz na Instagram">
+        </a>
+        </div>
+    </nav>
+
+</header>
+
+
+
+.navSoc{
+  display: flex;
+  justify-content:center;
+}
+.logoMini{
+  max-width: 35px;
+}
+.logo{
+    display: inline-block;
+    margin-left: 10px;
+    max-width: 100px;
+    margin-top: 10px;
+}
+li{
+  list-style-type: none;
+}
+/* Nav menu */
+.nav{
+  font-family: 'Oswald', sans-serif;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color:  rgb(11, 24, 30);
+  overflow: hidden;
+ 
+}
+
+.menu{
+  padding: 0%;
+ 
+}
+
+.menu a{
+    display: block;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    text-align:center;
+    text-decoration: none;
+}
+.menu a:hover{
+    background-color:  rgb(11, 24, 30);;
+}
+.nav{
+    max-height: 0;
+    transition: max-height .5s ease-out;
+ 
+}
+
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Menu Icon */
+.hamb{
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+    color: rgb(255, 255, 255);
+}
+
+/* Style label tag */
+
+.hamb-line {
+    background: rgb(255, 255, 255);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+    color: rgb(255, 255, 255);
+  
+}
+ /* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after{
+    background: rgb(255, 255, 255);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+   
+}
+.hamb-line::before{
+    top: 5px;
+   
+}
+.hamb-line::after{
+    top: -5px;
+}
+
+.side-menu {
+    display: none;
+
+}
+
+kopírování posledni CSS
+
+.menu a{
+  display: block;
+  padding: 15px;
+  color: rgb(255, 255, 255);
+  text-align:center;
+  text-decoration: none;
+}
+.menu a:hover{
+  background-color:  rgb(11, 24, 30);;
+}
+.nav{
+  max-height: 0;
+  transition: max-height .5s ease-out;
+
+}
+
+.dropdown {
+position: absolute;
+display: none;
+z-index: 1;
+box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Menu Icon */
+.hamb{
+  cursor: pointer;
+  float: right;
+  padding: 40px 20px;
+  color: rgb(255, 255, 255);
+}
+
+/* Style label tag */
+
+.hamb-line {
+  background: rgb(255, 255, 255);
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+  color: rgb(255, 255, 255);
+
+}
+/* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after{
+  background: rgb(255, 255, 255);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+ 
+}
+.hamb-line::before{
+  top: 5px;
+ 
+}
+.hamb-line::after{
+  top: -5px;
+}
+
+.side-menu {
+  display: none;
+
+}
+
+
+/* Hide checkbox */
+
+/* Toggle menu icon */
+.side-menu:checked ~ nav{
+  max-height: 100%;  
+
+}
+.side-menu:checked ~ .hamb .hamb-line {
+  background: transparent;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before {
+  transform: rotate(-45deg);
+  top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+  transform: rotate(45deg);
+  top:0;
+}
