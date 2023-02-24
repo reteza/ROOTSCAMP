@@ -7,7 +7,7 @@ if(galleryImages) {
     image.onclick = function() {
       let getElementCss = window.getComputedStyle(image);
       let getFullImgUrl = getElementCss.getPropertyValue("background-image");
-      let getImgUrlPos = getFullImgUrl.split("/galerieModrin/thumb/");
+      let getImgUrlPos = getFullImgUrl.split("/galerieBouda/thumb/");
       let setNewImgUrl = getImgUrlPos[1].replace('")', '');
 
       getLatestOpenedImg = index + 1;
@@ -20,31 +20,15 @@ if(galleryImages) {
 
       let newImg = document.createElement("img");
       newImgWindow.appendChild(newImg);
-      newImg.setAttribute("src", "/images/galerieModrin/" + setNewImgUrl); 
+      newImg.setAttribute("src", "/images/galerieBouda/" + setNewImgUrl);
+
    }
   });
+
 }
 
-function closeImg() {
+function closeImg ()
   document.querySelector(".img-window").remove();
-  document.querySelector(".img-btn-next").remove();
-  document.querySelector(".img-btn-prev").remove();
-}
 
 
-const swiper = new Swiper('.swiper',{
-    loop: true,
-    direction: 'horizontal',
-   
-    // If we need pagination
-    pagination: {
-      el:'.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-  });
+

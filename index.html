@@ -1,18 +1,78 @@
----
-layout: template.njk
-title: Úvod
----
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Roots Camp</title>
 
+	<!-- Google Fonts: Montserrat -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+	<link rel="stylesheet" href="/css/style.css">
+
+</head>
+<header class="header">
+    <!-- Logo -->
+    <a href="/index.html">
+        <img class="logo" src="/images/logo do levého horního rohu.png" alt="ROOTSCAMP">
+    </a>
+    <!-- Hamburger icon -->
+    <input class="side-menu" type="checkbox" id="side-menu"/>
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+    <!-- Menu -->
+    <nav class="nav">
+        <ul class="menu">
+            <li><a href="/index.html">Úvod</a></li>
+            <li><a href="/oNas/">O nás</a></li>
+            <li class="subnav">
+                <p class="subnavbtn">Kempy<i class="fa fa-caret-down"></i></p>
+                <div class="subnav-content">
+                    <a href="/kempy/">O kempech</a>
+                    <a href="/planovaneAkce/">Plánované akce</a>
+                    <a href="/kdeJsmeByli/">Kde jsme byli</a>
+                </div>
+            </li>
+            <li><a href="/treninky/">Tréninky</a></li>
+        </ul>
+        <div class="navSoc">
+            <a href="https://www.facebook.com/people/ROOTS-CAMP/100082984676452/">
+                <img class="logoMini" src="/images/fb.png" alt="Odkaz na Facebook">
+            </a>
+    
+            <a href="https://www.instagram.com/rootscampcz/?igshid=YmMyMTA2M2Y%3D">
+                <img class="logoMini" src="/images/insta (1).png" alt="Odkaz na Instagram">
+            </a>
+        </div>
+    </nav>
+  
+</header>
+
+
+<body>
+<main class = "main">
+    
 <div class="background_home">
-    <h1>DĚLÁME Z POHYBU ZÁŽITEK </h1>
+    <h1 class="h1__header">DĚLÁME Z POHYBU ZÁŽITEK </h1>
     <a class="button__header" href="/planovaneAkce/">Zažijte ROOTS CAMP!</a> 
 </div>
 
 <div class="homeCamps">
-    <h2>KEMPY</h2>
     <section class="sectionLeft">
         <section class="campsAA">
-            <p>Vyměňte na chvíli gym za hory, samotu v lese nebo jiné krásné místo v přírodě a vyrazte s námi na kemp! Vybavení vám chybět nebude. Vše, co budeme potřebovat, bereme s sebou nebo využijeme toho, co nám okolí nabízí. Tréninky v partě podobně smýšlejících lidí na čerstvém vzduchu, výhledem do krajiny, ubytování na nějakém výjimečném místě, pečlivě nachystaný program a dobré jídlo k tomu… Jedete s námi?</p>
+            <h1>KEMPY</h1>
+            <p>Vyměňte na chvíli gym za hory, samotu v lese nebo jiné krásné místo v přírodě a vyrazte s námi na kemp! Vybavení vám chybět nebude. Vše, co budeme potřebovat, bereme s sebou nebo využijeme toho, co nám okolí nabízí. Tréninky v partě podobně smýšlejících lidí na čerstvém vzduchu, s výhledem do krajiny ubytování na nějakém výjimečném místě, pečlivě nachystaný program a dobré jídlo k tomu… Poslední větu. Líbí se vám to?</p>
             <a class="button" href="/kempy/"> Chci jet taky!</a>  
         </section>
         <img class="profilPhoto" src="/images/HP_2_kempy.jpg" alt="photo">
@@ -23,27 +83,27 @@ title: Úvod
     <h1>ZAŽIJTE ROOTS CAMP</h1>
     <section class="flex">
         <section class="icon">
-            <h2>Krásná místa</h2>
             <img class="icons" src="/images/HP_3_Krásná místa.jpg" alt="photo">
+            <h2>Krásná místa</h2>
         </section>
         <section class="icon">
-            <h2>Tréninky s výhledem</h2>
-            <img class="icons" src="/images/HP_4_Tréninky2.jpg" alt="photo">
+            <img class="icons" src="/images/HP_4_Tréninky.jpg" alt="photo">
+            <h2>Tréninky v přírodě</h2>
         </section>
         <section class="icon">
-            <h2>Komunita</h2>
             <img class="icons" src="/images/HP_5_Komunita.jpg" alt="photo">
+            <h2>Komunita</h2>
         </section>
         <section class="icon">
-            <h2>Dobré jídlo</h2>
             <img class="icons" src="/images/HP_6_Dobré jídlo.jpg" alt="photo">
+            <h2>Dobré jídlo</h2>
         </section>
     </section>
 </div>
 
 <div class="homePhotoGallery">
     
-    <h1>FOTOALBUM</h1>
+    <h1>Podívejte se, co jsme už zažili</h1>
     
     <section class="headerGallery">
     <img class="photoGallery" src="/images/HP_7_Fotoalbum_1.jpg" alt="photo">
@@ -58,7 +118,7 @@ title: Úvod
     <img class="photoGallery" src="/images/HP_7_Fotoalbum_10.jpg" alt="photo">
     <img class="photoGallery" src="/images/HP_7_Fotoalbum_11.jpg" alt="photo">
     <img class="photoGallery" src="/images/HP_7_Fotoalbum_12.jpg" alt="photo">
-    <a class="button" href="/kdeJsmebyli/"> Mrkněte se na víc fotek z kempů, kde jsme byli</a> 
+    <a class="button" href="/kdeJsmebyli/">Chceš vidět víc fotek? Mrkni!</a> 
 </section>
 </div>
 
@@ -132,7 +192,7 @@ title: Úvod
     <p class="centerText">Petr Bursík <br>
         tel: +420 724 000 139
     </p>
-    <p class="centerText">Mail: <a href="mailto:rootscamps.cz@gmail.com">rootscamps.cz@gmail.com</a></p>
+    <p class="centerText">Mail: <a href="rootscamp.cz@gmail.com">rootscamp.cz@gmail.com</a></p>
 
     </section>
 
@@ -147,3 +207,13 @@ title: Úvod
     </section>
 </div>
 
+
+
+</main>
+<footer>
+	&copy; 2023, <a class="reteza" href="http://reteza.cz/">reTeza</a>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="/index.js"></script>
+</body>
+</html>
