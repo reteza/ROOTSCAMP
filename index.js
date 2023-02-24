@@ -20,21 +20,19 @@ if(galleryImages) {
 
       let newImg = document.createElement("img");
       newImgWindow.appendChild(newImg);
-      newImg.setAttribute("src", "/images/galerieModrin/" + setNewImgUrl); 
+      newImg.setAttribute("src", "/images/galerieModrin/" + setNewImgUrl);
+
    }
   });
+
 }
 
-function closeImg() {
+function closeImg ()
   document.querySelector(".img-window").remove();
-  document.querySelector(".img-btn-next").remove();
-  document.querySelector(".img-btn-prev").remove();
-}
-
 
 const swiper = new Swiper('.swiper',{
     loop: true,
-    direction: 'horizontal',
+    direction: 'vertical',
    
     // If we need pagination
     pagination: {
@@ -46,5 +44,6 @@ const swiper = new Swiper('.swiper',{
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  
-  });
+
+  })
+
