@@ -1,4 +1,4 @@
-let galleryImages = document.querySelectorAll(".galleryBouda-img");
+let galleryImages = document.querySelectorAll(".galleryModrin-img");
 let getLatestOpenedImg; 
 let windowWidth = window.innerWidth;
 
@@ -7,7 +7,7 @@ if(galleryImages) {
     image.onclick = function() {
       let getElementCss = window.getComputedStyle(image);
       let getFullImgUrl = getElementCss.getPropertyValue("background-image");
-      let getImgUrlPos = getFullImgUrl.split("/galerieBouda/thumb/");
+      let getImgUrlPos = getFullImgUrl.split("/galerieModrin/thumb/");
       let setNewImgUrl = getImgUrlPos[1].replace('")', '');
 
       getLatestOpenedImg = index + 1;
@@ -20,7 +20,7 @@ if(galleryImages) {
 
       let newImg = document.createElement("img");
       newImgWindow.appendChild(newImg);
-      newImg.setAttribute("src", "/images/galerieBouda/" + setNewImgUrl);
+      newImg.setAttribute("src", "/images/galerieModrin/" + setNewImgUrl);
 
    }
   });
