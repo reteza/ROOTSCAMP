@@ -24,6 +24,7 @@ if(galleryImages) {
 
    }
   });
+
 }
 
 function closeImg() {
@@ -31,3 +32,4 @@ function closeImg() {
   document.querySelector(".img-btn-next").remove();
   document.querySelector(".img-btn-prev").remove();
 }
+
