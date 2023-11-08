@@ -15,7 +15,7 @@
             <li><a href="">Kempy</a>
                 <ul class="nav-dropdown">
                     <li><a href="/kempy/">O kempech</a></li>
-                    <li><a href="/planovaneAkce/">Plánované akce</a></li>
+                    <li><a href="/planovane-akce/">Plánované akce</a></li>
                     <li><a href="/kdeJsmeByli/">Kde jsme byli</a></li>
                 </ul>
             </li>

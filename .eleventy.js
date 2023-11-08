@@ -10,6 +10,11 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
 
   return {
+    dir: {
+      input: "_pages",
+      includes: "../_includes",
+      output: "_site"
+    },    
     // možné formáty šablon
     templateFormats: ["njk", "html", "md", "liquid"],
 
