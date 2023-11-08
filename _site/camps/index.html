@@ -16,18 +16,13 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
-	<link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="/assets/css/style.css">
 
 </head>
-
-
 <header class="header">
     <!-- Logo -->
-    <a href="/home/">
+    <a href="/index.html">
         <img class="logo" src="/images/logo do levého horního rohu.png" alt="ROOTSCAMP">
     </a>
     <!-- Hamburger icon -->
@@ -36,73 +31,96 @@
     <!-- Menu -->
     <nav class="nav">
         <ul class="menu">
-            <li><a href="/home/">Úvod</a></li>
-            <li><a href="/aboutUs/">O nás</a></li>
-            <li><a href="/camps/">Kempy</a></li>
-                <ul class="menu">
-                    <li><a href="/CampsPlannedEvents/">Plánované akce</a></li>
-                    <li><a href="/campsPreviousCamps/">Kde jsme byli</a></li>
-                </ul>
-            <li><a href="/treninky">Tréninky</a></li>
+            <li><a href="/index.html">Úvod</a></li>
+            <li><a href="/oNas/">O nás</a></li>
+            <li class="subnav">
+                <p class="subnavbtn">Kempy<i class="fa fa-caret-down"></i></p>
+                <div class="subnav-content">
+                    <a href="/kempy/">O kempech</a>
+                    <a href="/planovaneAkce/">Plánované akce</a>
+                    <a href="/kdeJsmeByli/">Kde jsme byli</a>
+                </div>
+            </li>
+            <li><a href="/treninky/">Tréninky</a></li>
         </ul>
         <div class="navSoc">
-        <a href="https://www.facebook.com/people/ROOTS-CAMP/100082984676452/">
-            <img class="logoMini" src="/images/fb.png" alt="Odkaz na Facebook">
-        </a>
-
-        <a href="https://www.instagram.com/rootscampcz/?igshid=YmMyMTA2M2Y%3D">
-            <img class="logoMini" src="/images/insta (1).png" alt="Odkaz na Instagram">
-        </a>
+            <a href="https://www.facebook.com/people/ROOTS-CAMP/100082984676452/" target="_blank">
+                <img class="logoMini" src="/images/fb.png" alt="Odkaz na Facebook">
+            </a>
+    
+            <a href="https://www.instagram.com/rootscampcz/?igshid=YmMyMTA2M2Y%3D" target="_blank">
+                <img class="logoMini" src="/images/insta (1).png" alt="Odkaz na Instagram">
+            </a>
         </div>
     </nav>
-
+  
 </header>
+
+
 <body>
 <main class = "main">
-    <div class="background_Kempy">
+    <div class="background">
     <h1>KEMPY</h1>
-    <h2>ZAŽIJTE ROOTS CAMP!<br></h2>
 </div>
 
 <div class="campsAbout">
-    <p>CrossFit milujeme, v gymu trávíme spoustu času, někdy je ale super vyrazit ven ven s partou podobně smýšlejících lidí na nějaké krásné místo a zamakat si v přírodě, s výhledem na čerstvém vzduchu. ROOTS CAMP  dělá z pohybu zážitek.</p>
-    <section class="sectionRight">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet voluptatem facere, quam, cumque quis, beatae reprehenderit cum modi odio laborum vitae perspiciatis ex alias vero repellendus unde eos qui! Debitis?</p>
+    <section class="campsRight">
         <section class="campsAA">
             <h3>Kam pojedeme příště?</h3>
             <a class="button" href="/CampsPlannedEvents/"> Plánované akce</a> 
          </section>
-        <img class="photoGallery" src="/images/KEMPY_2_plánované akce.jpg">
+        <img class="photoGallery" src="/images/bg2.jpg" alt="photo" width="600" height="400">
     </section>
 
-    <section class="sectionLeft">
+    <section class="campsLeft">
         <section class="campsAA">
             <h3>Kde jsme byli a co jsme už zažili?</h3>
             <a class="button" href="/campsPreviousCamps/"> Chci se mrknout</a> 
          </section>
-         <img class="photoGallery" src="/images/KEMPY_3_kde jsme byli.jpg">
+         <img class="photoGallery" src="/images/bg2.jpg" alt="photo" width="600" height="400">
     </section>
 </div>
 
 <div class="FAQ">
+<h2>Co je dobré vědět?</h2>
 
-    <h3>PRO KOHO JSOU KEMPY A KDO MŮŽE JET?</h3>
-    <p>Na to, abyste jeli s námi na kemp, nemusíte mít žádné extra dovednosti, v zásadě stačí mít alespoň základní crossfitové dovednosti (absolvovaný on ramp kurz). Ať už chodíte na lekce, s crossfitem začínáte, jedete svůj programming nebo objíždíte závody, pro všechny je na kempu místo. Proto taky ROOTS CAMP vznikl - aby propojoval lidi z různých gymů, měst i výkonnostních úrovní. Vždyť v tom je krása crossfitu - zatrénovat si spolu můžou všichni. Kdybyste si náhodou nebyli jistí, ozvěte se nám a domluvíme se.</p>
-    <h3>JAK VYPADAJÍ TRÉNINKY?</h3>
-    <p>Pro tréninky maximálně využíváme toho, co nám okolí nabízí, a sebou bereme jen nezbytné vybavení. Ač s sebou nemáme celý gym, tréninky jsou sestaveny tak, abyste si mákli a aby vás to bavilo. Ostatně, když se cvičí v přírodě a v partě, jde to všechno hned líp ☺. Rádi to okořeníme i výzvami jako známé vynesení osy a kotoučů na Sněžku a snatchování na jejím vrcholu.
-    <br> Od roku 2023 zaměřujeme každý kemp na rozvoj určité dovednosti jako je například veslování nebo gymnastika, abyste čas investovaný do kempu co nejlépe využili a posunuli se ve svých dovednostech zase o kousek dále.
-    </p>
-    <h3>CO TAM BUDEME JÍST?</h3>
-    <p>Jídlo je nedílná součást tréninku. Chceme, abyste se na kempu nemuseli o nic starat, jen trénovat, bavit se, odpočívat a užívat si krásnou přírodu kolem, proto je zajištěna plná penze. Ubytování vybíráme tak, abychom si mohli vařit sami. To nám umožňuje sestavit jídelníček, který je nutričně vyvážený a vyhovuje náročnému programu. Každý si může nabrat podle libosti a nemusí se bát, že odejde hladový. Umíme si poradit i s vegetariány a jinými požadavky na stravu.
-    <br> Myslíme i na takové podstatné věci jako je dobrá káva, výživové doplňky a dezert ☺.
-    <br>Vaření i trénování nás baví a věříme, že je to na výsledku znát.
-    </p>
-    <h3>KAM JEZDÍME NA KEMPY?</h3>
-    <p>Pořádáme kempy pro lidi, kteří chodí do práce, studují, trénují a si ho jedou užít. Věříme že ubytování je důležitou součástí celého zážitku, a proto místa vybíráme pečlivě dlouho dopředu. Důležité je, aby byla obklopena krásnou přírodou, ideálně s výhledem, kolem bylo místo na cvičení a uvnitř útulno. Zakládáme si na tom, aby tam byla společenská místnost, kde se můžou všichni sejít u jídla a večer si popovídat. Vyhřívaná káď s výhledem na hory, biotopové jezírko nebo sauna jsou vždy takovým příjemným bonusem ☺.
-        <br>Česká republika je plná nádherných míst a my je chceme s ROOTS CAMP objevovat. Proto záměrně hledáme stále nová místa, ale na ta výjimečná se určitě budeme rádi vracet.
-        </p>
-    <h2>Co vás ještě zajímá?</h2>
+<h3>Mám si s sebou vzít věci na cvičení?</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aspernatur, voluptate eum iste vitae rem, veritatis ex mollitia alias nobis soluta dicta nam saepe aut dolorem, tempora dolor cupiditate recusandae?</p>
 
-<a class="button" href="/home#contact/"> Ptejte se!</a>
+<h3>Mám si s sebou vzít věci na cvičení?</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aspernatur, voluptate eum iste vitae rem, veritatis ex mollitia alias nobis soluta dicta nam saepe aut dolorem, tempora dolor cupiditate recusandae?</p>
+
+<h3>Mám si s sebou vzít věci na cvičení?</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aspernatur, voluptate eum iste vitae rem, veritatis ex mollitia alias nobis soluta dicta nam saepe aut dolorem, tempora dolor cupiditate recusandae?</p>
+
+<h3>Mám si s sebou vzít věci na cvičení?</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aspernatur, voluptate eum iste vitae rem, veritatis ex mollitia alias nobis soluta dicta nam saepe aut dolorem, tempora dolor cupiditate recusandae?</p>
+
+<h3>Mám si s sebou vzít věci na cvičení?</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aspernatur, voluptate eum iste vitae rem, veritatis ex mollitia alias nobis soluta dicta nam saepe aut dolorem, tempora dolor cupiditate recusandae?</p>
+
+<h3>Mám si s sebou vzít věci na cvičení?</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aspernatur, voluptate eum iste vitae rem, veritatis ex mollitia alias nobis soluta dicta nam saepe aut dolorem, tempora dolor cupiditate recusandae?</p>
+
+<h3>Mám si s sebou vzít věci na cvičení?</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aspernatur, voluptate eum iste vitae rem, veritatis ex mollitia alias nobis soluta dicta nam saepe aut dolorem, tempora dolor cupiditate recusandae?</p>
+
+<h3>Mám si s sebou vzít věci na cvičení?</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aspernatur, voluptate eum iste vitae rem, veritatis ex mollitia alias nobis soluta dicta nam saepe aut dolorem, tempora dolor cupiditate recusandae?</p>
+
+<h3>Mám si s sebou vzít věci na cvičení?</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aspernatur, voluptate eum iste vitae rem, veritatis ex mollitia alias nobis soluta dicta nam saepe aut dolorem, tempora dolor cupiditate recusandae?</p>
+
+<h3>Mám si s sebou vzít věci na cvičení?</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aspernatur, voluptate eum iste vitae rem, veritatis ex mollitia alias nobis soluta dicta nam saepe aut dolorem, tempora dolor cupiditate recusandae?</p>
+
+<h3>Mám si s sebou vzít věci na cvičení?</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aspernatur, voluptate eum iste vitae rem, veritatis ex mollitia alias nobis soluta dicta nam saepe aut dolorem, tempora dolor cupiditate recusandae?</p>
+
+<h2>Co vás ještě zajímá?</h2>
+
+<a class="button" href="/home#contact/"> Ptejte se</a>
 </div>
 
 </main>
