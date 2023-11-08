@@ -185,7 +185,7 @@ li{
 }
 
 .background{
-  background-image: url(/images/onas_uvodnifotka.jpg);
+  background-image: url(/assets/images/onas_uvodnifotka.jpg);
   padding: 150px 30px;
   text-align: justify;
   font-family: 'Oswald', sans-serif;
@@ -195,7 +195,7 @@ li{
 }
 
 .background__previousCamps{
-  background-image: url(/images/kdejsmebyli_uvodnifotka.jpg);
+  background-image: url(/assets/images/kdejsmebyli_uvodnifotka.jpg);
   padding: 150px 30px;
   text-align: justify;
   font-family: 'Oswald', sans-serif;
@@ -205,7 +205,7 @@ li{
 }
 
 .background_home{
-  background-image: url(/images/HP_uvodnifotka.jpg);
+  background-image: url(/assets/images/HP_uvodnifotka.jpg);
   padding: 150px 30px;
   text-align: justify;
   font-family: 'Oswald', sans-serif;
@@ -214,7 +214,7 @@ li{
   background-size: cover;
 }
 .background_plannedEvents{
-  background-image: url(/images/planovaneakce_uvodnitfotka.jpg);
+  background-image: url(/assets/images/planovaneakce_uvodnitfotka.jpg);
   padding: 150px 30px;
   text-align: justify;
   font-family: 'Oswald', sans-serif;
@@ -224,7 +224,7 @@ li{
 }
 
 .background_Kempy{
-  background-image: url(/images/kempy_uvodnifotka.jpg);
+  background-image: url(/assets/images/kempy_uvodnifotka.jpg);
   padding: 150px 30px;
   text-align: justify;
   font-family: 'Oswald', sans-serif;
@@ -234,7 +234,7 @@ li{
 }
 
 .background_treninky{
-  background-image: url(/images/treninky_uvodnifotka.jpg);
+  background-image: url(/assets/images/treninky_uvodnifotka.jpg);
   padding: 150px 30px;
   text-align: justify;
   font-family: 'Oswald', sans-serif;
@@ -704,51 +704,51 @@ justify-content: center;
 
 #index-galleryModrin .img1 {
  grid-area: img1;
- background-image: url(/images/galerieModrin/thumb/img1.jpg);
+ background-image: url(/assets/images/galerieModrin/thumb/img1.jpg);
 }
 #index-galleryModrin .img2 {
   grid-area: img2;
-  background-image: url(/images/galerieModrin/thumb/img2.jpg);
+  background-image: url(/assets/images/galerieModrin/thumb/img2.jpg);
  }
  #index-galleryModrin .img3 {
   grid-area: img3;
-  background-image: url(/images/galerieModrin/thumb/img3.jpg);
+  background-image: url(/assets/images/galerieModrin/thumb/img3.jpg);
  }
  #index-galleryModrin .img4 {
   grid-area: img4;
-  background-image: url(/images/galerieModrin/thumb/img4.jpg);
+  background-image: url(/assets/images/galerieModrin/thumb/img4.jpg);
  }
  #index-galleryModrin .img5 {
   grid-area: img5;
-  background-image: url(/images/galerieModrin/thumb/img5.jpg);
+  background-image: url(/assets/images/galerieModrin/thumb/img5.jpg);
  }
  #index-galleryModrin .img6{
   grid-area: img6;
-  background-image: url(/images/galerieModrin/thumb/img6.jpg);
+  background-image: url(/assets/images/galerieModrin/thumb/img6.jpg);
  }
  #index-galleryModrin .img7 {
   grid-area: img7;
-  background-image: url(/images/galerieModrin/thumb/img7.jpg);
+  background-image: url(/assets/images/galerieModrin/thumb/img7.jpg);
  }
  #index-galleryModrin .img8 {
   grid-area: img8;
-  background-image: url(/images/galerieModrin/thumb/img8.jpg);
+  background-image: url(/assets/images/galerieModrin/thumb/img8.jpg);
  }
  #index-galleryModrin .img9 {
   grid-area: img9;
-  background-image: url(/images/galerieModrin/thumb/img9.jpg);
+  background-image: url(/assets/images/galerieModrin/thumb/img9.jpg);
  }
  #index-galleryModrin .img10 {
   grid-area: img10;
-  background-image: url(/images/galerieModrin/thumb/img10.jpg);
+  background-image: url(/assets/images/galerieModrin/thumb/img10.jpg);
  }
  #index-galleryModrin .img11 {
   grid-area: img11;
-  background-image: url(/images/galerieModrin/thumb/img11.jpg);
+  background-image: url(/assets/images/galerieModrin/thumb/img11.jpg);
  }
  #index-galleryModrin .img12 {
   grid-area: img12;
-  background-image: url(/images/galerieModrin/thumb/img12.jpg);
+  background-image: url(/assets/images/galerieModrin/thumb/img12.jpg);
  }
 
  .gallery-img div{

@@ -337,51 +337,51 @@ li{
 
 #index-galleryBouda .img1 {
  grid-area: img1;
- background-image: url(/images/galerieBouda/thumb/img1.jpg);
+ background-image: url(/assets/images/galerieBouda/thumb/img1.jpg);
 }
 #index-galleryBouda .img2 {
   grid-area: img2;
-  background-image: url(/images/galerieBouda/thumb/img2.jpg);
+  background-image: url(/assets/images/galerieBouda/thumb/img2.jpg);
  }
  #index-galleryBouda .img3 {
   grid-area: img3;
-  background-image: url(/images/galerieBouda/thumb/img3.jpg);
+  background-image: url(/assets/images/galerieBouda/thumb/img3.jpg);
  }
  #index-galleryBouda .img4 {
   grid-area: img4;
-  background-image: url(/images/galerieBouda/thumb/img4.jpg);
+  background-image: url(/assets/images/galerieBouda/thumb/img4.jpg);
  }
  #index-galleryBouda .img5 {
   grid-area: img5;
-  background-image: url(/images/galerieBouda/thumb/img5.jpg);
+  background-image: url(/assets/images/galerieBouda/thumb/img5.jpg);
  }
  #index-galleryBouda .img6{
   grid-area: img6;
-  background-image: url(/images/galerieBouda/thumb/img6.jpg);
+  background-image: url(/assets/images/galerieBouda/thumb/img6.jpg);
  }
  #index-galleryBouda .img7 {
   grid-area: img7;
-  background-image: url(/images/galerieBouda/thumb/img7.jpg);
+  background-image: url(/assets/images/galerieBouda/thumb/img7.jpg);
  }
  #index-galleryBouda .img8 {
   grid-area: img8;
-  background-image: url(/images/galerieBouda/thumb/img8.jpg);
+  background-image: url(/assets/images/galerieBouda/thumb/img8.jpg);
  }
  #index-galleryBouda .img9 {
   grid-area: img9;
-  background-image: url(/images/galerieBouda/thumb/img9.jpg);
+  background-image: url(/assets/images/galerieBouda/thumb/img9.jpg);
  }
  #index-galleryBouda .img10 {
   grid-area: img10;
-  background-image: url(/images/galerieBouda/thumb/img10.jpg);
+  background-image: url(/assets/images/galerieBouda/thumb/img10.jpg);
  }
  #index-galleryBouda .img11 {
   grid-area: img11;
-  background-image: url(/images/galerieBouda/thumb/img11.jpg);
+  background-image: url(/assets/images/galerieBouda/thumb/img11.jpg);
  }
  #index-galleryBouda .img12 {
   grid-area: img12;
-  background-image: url(/images/galerieBouda/thumb/img12.jpg);
+  background-image: url(/assets/images/galerieBouda/thumb/img12.jpg);
  }
 
  .gallery-img div{

@@ -20,7 +20,7 @@ if(galleryImages) {
 
       let newImg = document.createElement("img");
       newImgWindow.appendChild(newImg);
-      newImg.setAttribute("src", "/images/galerieHojsin1/" + setNewImgUrl);
+      newImg.setAttribute("src", "/assets/images/galerieHojsin1/" + setNewImgUrl);
 
    }
   });
