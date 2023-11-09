@@ -20,7 +20,7 @@ if(galleryImages) {
 
       let newImg = document.createElement("img");
       newImgWindow.appendChild(newImg);
-      newImg.setAttribute("src", "/images/galerieBouda/" + setNewImgUrl);
+      newImg.setAttribute("src", "/assets/images/galerieBouda/" + setNewImgUrl);
 
    }
   });

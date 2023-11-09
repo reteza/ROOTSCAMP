@@ -20,7 +20,7 @@ if(galleryImages) {
 
       let newImg = document.createElement("img");
       newImgWindow.appendChild(newImg);
-      newImg.setAttribute("src", "/images/galerieModrin/" + setNewImgUrl);
+      newImg.setAttribute("src", "/assets/images/galerieModrin/" + setNewImgUrl);
 
    }
   });

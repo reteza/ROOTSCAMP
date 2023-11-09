@@ -7,7 +7,7 @@
 *.code-workspace
 .history
 .ionide
-
+/node_modules
 ### macOS ###
 .DS_Store
 .AppleDouble
@@ -19,4 +19,5 @@ Thumbs.db:encryptable
 ehthumbs.db
 ehthumbs_vista.db
 [Dd]esktop.ini
-/node_modules
+node_modules
+/_site
