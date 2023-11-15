@@ -66,18 +66,12 @@ li{
   height: 100%;
   position: fixed;
   background-color:  rgb(11, 24, 30);
-  overflow: hidden;
   float: right;
-}
-
-.menu, .subnav{
-  padding: 0%;
- 
 }
 
 .menu a, .subnavbtn{
   display: block;
-  padding: 15px;
+  padding: 1rem;
   color: rgb(255, 255, 255);
   text-align:center;
   text-decoration: none;
@@ -148,12 +142,13 @@ li{
   width: 100%;
   z-index: 1;
   padding: 0 ;
+  min-width: 16.5rem;
   display: none;
 }
 .subnav-content a {
   color: rgb(255, 255, 255);
   text-decoration: none;
-  padding: 1.5%;
+  padding: 1rem 1.25rem;
   margin: 0;
   text-align: center;
 }
@@ -582,8 +577,12 @@ justify-content: center;
     width: 100%;
     justify-content: flex-end;
   }
+  .menu {
+    display: flex;
+    flex-flow: row nowrap;
+  }
   .menu li{
-      float: left;
+    position: relative;
   }
   .menu a:hover{
       background-color: transparent;
@@ -592,8 +591,10 @@ justify-content: center;
   }  
  /* Sub nav */
   .subnav-content {
-    padding: 20px 0 ;
-    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 1.25rem 0;
     background-color:  rgb(11, 24, 30);
   }
   .subnav-content a {
