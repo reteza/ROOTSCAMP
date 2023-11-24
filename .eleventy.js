@@ -1,3 +1,5 @@
+const i18n = require('eleventy-plugin-i18n');
+
 module.exports = function(eleventyConfig) {
 
 	// Výchozí výstupní složka: _site
